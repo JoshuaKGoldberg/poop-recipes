@@ -1,0 +1,5 @@
+{
+	"entry": ["src/index.ts!"],
+	"ignoreExportsUsedInFile": { "interface": true, "type": true },
+	"project": ["src/**/*.ts!"]
+}
