@@ -1,12 +1,12 @@
 jobs:
-  type_check:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/prepare
-      - run: pnpm tsc
+      - run: pnpm build
 
-name: Type Check
+name: Build
 
 on:
   pull_request: ~

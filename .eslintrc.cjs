@@ -45,21 +45,16 @@ module.exports = {
 			},
 		},
 		{
-			files: "**/*.md/*.ts",
-			rules: {
-				"n/no-missing-import": ["error", { allowModules: ["poop-recipes"] }],
-			},
-		},
-		{
 			excludedFiles: ["**/*.md/*.ts"],
 			extends: [
 				"plugin:@typescript-eslint/strict-type-checked",
 				"plugin:@typescript-eslint/stylistic-type-checked",
 			],
-			files: ["**/*.ts"],
+			files: ["packages/**/*.ts"],
 			parser: "@typescript-eslint/parser",
 			parserOptions: {
-				project: "./tsconfig.eslint.json",
+				project: true,
+				tsconfigRootDir: __dirname,
 			},
 			rules: {
 				// These off-by-default rules work well for this repo and we like them on.
@@ -95,7 +90,6 @@ module.exports = {
 			files: ["**/*.{yml,yaml}"],
 			parser: "yaml-eslint-parser",
 			rules: {
-				"yml/file-extension": ["error", { extension: "yml" }],
 				"yml/sort-keys": [
 					"error",
 					{
