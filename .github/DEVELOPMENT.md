@@ -11,6 +11,20 @@ pnpm install
 > This repository includes a list of suggested VS Code extensions.
 > It's a good idea to use [VS Code](https://code.visualstudio.com) and accept its suggestion to install them, as they'll help with development.
 
+## Building
+
+Build [TypeScript Project References](https://www.typescriptlang.org/docs/handbook/project-references.html) locally to generate source files in each package from `src/` into output files in `lib/`:
+
+```shell
+pnpm build
+```
+
+Add `--watch` to run the builder in a watch mode that continuously recreates `lib/` as you save files:
+
+```shell
+pnpm build --watch
+```
+
 ## Formatting
 
 [Prettier](https://prettier.io) is used to format code.
@@ -41,6 +55,8 @@ For example, ESLint can be run with `--fix` to auto-fix some lint rule complaint
 ```shell
 pnpm run lint --fix
 ```
+
+Note that you'll likely need to run `pnpm build` before `pnpm lint` so that lint rules which check the file system can pick up on any built files.
 
 ## Testing
 

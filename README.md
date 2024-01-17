@@ -16,15 +16,7 @@
 
 ## Usage
 
-```shell
-npm i poop-recipes
-```
-
-```ts
-import { greet } from "poop-recipes";
-
-greet("Hello, world! 💖");
-```
+We'll let you know... soon!
 
 ## Contributors
 
