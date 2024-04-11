@@ -70,7 +70,7 @@ importers:
         version: 2.4.0
       knip:
         specifier: ^5.0.0
-        version: 5.9.0(@types/node@20.12.7)(typescript@5.4.4)
+        version: 5.9.1(@types/node@20.12.7)(typescript@5.4.4)
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.2
@@ -2927,8 +2927,8 @@ packages:
     resolution: {integrity: sha512-14qdBKoonU99XDhWcFKZTShK+QV47qU97u8zzoVo9cL5TZ3BmBHXogItSt9qJjR0KUMFRhcCW8uGIGl8nkl7Aw==}
     dev: true
 
-  /hasown@2.0.0:
-    resolution: {integrity: sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==}
+  /hasown@2.0.2:
+    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
@@ -3048,7 +3048,7 @@ packages:
   /is-core-module@2.13.1:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
     dependencies:
-      hasown: 2.0.0
+      hasown: 2.0.2
     dev: true
 
   /is-decimal@1.0.4:
@@ -3287,8 +3287,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knip@5.9.0(@types/node@20.12.7)(typescript@5.4.4):
-    resolution: {integrity: sha512-x5vNKlPjwtkwEza0tDBZ4je0onscqJYC2qsdIWbTBrg1MDgE+SEQhrvEiWdFz8AtfZ/8XwCh3DLFhPC1PQfLkg==}
+  /knip@5.9.1(@types/node@20.12.7)(typescript@5.4.4):
+    resolution: {integrity: sha512-OiUSEtLubLpJ2OH/kcwrB+SmPiRXHoFhSOIG8B6HDzeFPm8hDWipscKlrC5nSYSi9ix2igD7zhfC+qpbrO3zRQ==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
